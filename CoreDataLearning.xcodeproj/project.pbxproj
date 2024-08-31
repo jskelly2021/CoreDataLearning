@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		534316882C83C5BC0081200B /* Job+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534316862C83C5BC0081200B /* Job+CoreDataClass.swift */; };
+		534316892C83C5BC0081200B /* Job+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534316872C83C5BC0081200B /* Job+CoreDataProperties.swift */; };
 		53B57AED2C83B3A500CD2D47 /* CoreDataLearningApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B57AEC2C83B3A500CD2D47 /* CoreDataLearningApp.swift */; };
 		53B57AF12C83B3A700CD2D47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53B57AF02C83B3A700CD2D47 /* Assets.xcassets */; };
 		53B57AF42C83B3A700CD2D47 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53B57AF32C83B3A700CD2D47 /* Preview Assets.xcassets */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		534316862C83C5BC0081200B /* Job+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Job+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		534316872C83C5BC0081200B /* Job+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Job+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		53B57AE92C83B3A500CD2D47 /* CoreDataLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53B57AEC2C83B3A500CD2D47 /* CoreDataLearningApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataLearningApp.swift; sourceTree = "<group>"; };
 		53B57AF02C83B3A700CD2D47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -83,8 +87,10 @@
 		53B57AFC2C83B47100CD2D47 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				53B57AFF2C83B4E800CD2D47 /* JobDatabase.xcdatamodeld */,
 				53B57B022C83B6A000CD2D47 /* DataController.swift */,
+				53B57AFF2C83B4E800CD2D47 /* JobDatabase.xcdatamodeld */,
+				534316862C83C5BC0081200B /* Job+CoreDataClass.swift */,
+				534316872C83C5BC0081200B /* Job+CoreDataProperties.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -159,6 +165,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				534316882C83C5BC0081200B /* Job+CoreDataClass.swift in Sources */,
+				534316892C83C5BC0081200B /* Job+CoreDataProperties.swift in Sources */,
 				53B57AFE2C83B49C00CD2D47 /* ContentView.swift in Sources */,
 				53B57B032C83B6A000CD2D47 /* DataController.swift in Sources */,
 				53B57B012C83B4E800CD2D47 /* JobDatabase.xcdatamodeld in Sources */,
