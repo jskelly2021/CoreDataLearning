@@ -8,17 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		53B57AED2C83B3A500CD2D47 /* CoreDataLearningApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B57AEC2C83B3A500CD2D47 /* CoreDataLearningApp.swift */; };
-		53B57AEF2C83B3A500CD2D47 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B57AEE2C83B3A500CD2D47 /* ContentView.swift */; };
 		53B57AF12C83B3A700CD2D47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53B57AF02C83B3A700CD2D47 /* Assets.xcassets */; };
 		53B57AF42C83B3A700CD2D47 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53B57AF32C83B3A700CD2D47 /* Preview Assets.xcassets */; };
+		53B57AFE2C83B49C00CD2D47 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B57AFD2C83B49C00CD2D47 /* ContentView.swift */; };
+		53B57B012C83B4E800CD2D47 /* JobDatabase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 53B57AFF2C83B4E800CD2D47 /* JobDatabase.xcdatamodeld */; };
+		53B57B032C83B6A000CD2D47 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B57B022C83B6A000CD2D47 /* DataController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		53B57AE92C83B3A500CD2D47 /* CoreDataLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53B57AEC2C83B3A500CD2D47 /* CoreDataLearningApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataLearningApp.swift; sourceTree = "<group>"; };
-		53B57AEE2C83B3A500CD2D47 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		53B57AF02C83B3A700CD2D47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		53B57AF32C83B3A700CD2D47 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		53B57AFD2C83B49C00CD2D47 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		53B57B002C83B4E800CD2D47 /* JobDatabase.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = JobDatabase.xcdatamodel; sourceTree = "<group>"; };
+		53B57B022C83B6A000CD2D47 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +56,8 @@
 			isa = PBXGroup;
 			children = (
 				53B57AEC2C83B3A500CD2D47 /* CoreDataLearningApp.swift */,
-				53B57AEE2C83B3A500CD2D47 /* ContentView.swift */,
+				53B57AFA2C83B44800CD2D47 /* Views */,
+				53B57AFC2C83B47100CD2D47 /* Models */,
 				53B57AF02C83B3A700CD2D47 /* Assets.xcassets */,
 				53B57AF22C83B3A700CD2D47 /* Preview Content */,
 			);
@@ -65,6 +70,23 @@
 				53B57AF32C83B3A700CD2D47 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		53B57AFA2C83B44800CD2D47 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				53B57AFD2C83B49C00CD2D47 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		53B57AFC2C83B47100CD2D47 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				53B57AFF2C83B4E800CD2D47 /* JobDatabase.xcdatamodeld */,
+				53B57B022C83B6A000CD2D47 /* DataController.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +159,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53B57AEF2C83B3A500CD2D47 /* ContentView.swift in Sources */,
+				53B57AFE2C83B49C00CD2D47 /* ContentView.swift in Sources */,
+				53B57B032C83B6A000CD2D47 /* DataController.swift in Sources */,
+				53B57B012C83B4E800CD2D47 /* JobDatabase.xcdatamodeld in Sources */,
 				53B57AED2C83B3A500CD2D47 /* CoreDataLearningApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,6 +366,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		53B57AFF2C83B4E800CD2D47 /* JobDatabase.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				53B57B002C83B4E800CD2D47 /* JobDatabase.xcdatamodel */,
+			);
+			currentVersion = 53B57B002C83B4E800CD2D47 /* JobDatabase.xcdatamodel */;
+			name = JobDatabase.xcdatamodeld;
+			path = /Users/jacobkelly/Documents/XCodeProjects/CoreDataLearning/CoreDataLearning/Models/JobDatabase.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 53B57AE12C83B3A500CD2D47 /* Project object */;
 }
