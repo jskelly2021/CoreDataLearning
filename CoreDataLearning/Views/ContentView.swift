@@ -28,7 +28,12 @@ struct ContentView: View {
                 ForEach(jobs, id: \.self) { job in
                     Text(job.title ?? "na")
                 }
+                .onDelete(perform: {offsets in
+                    context.delete(jobs[offsets.first ?? 0])
+                    try? context.save()
+                })
             }
+            
         }
         .padding()
     }
